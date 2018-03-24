@@ -1,0 +1,14 @@
+<h1>Planets. So many planets.</h1>
+
+<% if @planets != nil %>
+  <% @planets.each do |planet| %>
+    <div>
+      <h2>The planet: <%= planet.name %></h2>
+      <p><%= planet.description %></p>
+    </div>
+    <br />
+    <br />
+  <% end %>
+<% end %>
+
+<%= link_to "Go back to the homepage", root_path %>

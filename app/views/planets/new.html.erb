@@ -1,0 +1,7 @@
+<h1>Asteroids and other celestial bodies are okay to submit too.</h1>
+
+<%= simple_form_for @planet, url: planets_path do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>
